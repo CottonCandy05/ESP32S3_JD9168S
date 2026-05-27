@@ -38,7 +38,7 @@ graph TD
         GPIO -->|TFT_PWR / STBYB / RESX| Chip[Jadard JD9168S Controller]
         SPI -->|3-Wire SPI: SDA/SCL/CS| Chip
         RGB_Bus -->|16-Bit Parallel Bus: 640x480 @ 20.9MHz| Chip
-        GPIO -->|PWM Backlight: IO2| LCD[5.7" BOE TFT-LCD Panel]
+        GPIO -->|PWM Backlight: IO2| LCD["5.7-inch BOE TFT-LCD Panel"]
         
         I2C_Bus[ESP32-S3 I2C: IO37/IO38] <-->|I2C Address 0x28| Touch[Goodix GT911 Controller]
         GT911 <-->|I2C Commands & INT/RST| Touch
